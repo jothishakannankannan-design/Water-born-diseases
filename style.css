@@ -19,21 +19,14 @@ h1{
     background:white;
     padding:20px;
     margin:15px 0;
-    border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
 }
 
-.safe{
-    color:green;
-    font-weight:bold;
-    font-size:20px;
+.card h2{
+    color:#0066cc;
 }
 
-ul{
-    list-style:none;
-    padding:0;
-}
-
-li{
-    padding:5px;
+.card h3{
+    font-size:28px;
 }
