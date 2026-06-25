@@ -1,8 +1,14 @@
 body{
     font-family: Arial, sans-serif;
-    background:#f4f4f4;
-    text-align:center;
+    background:#eaf6ff;
+    margin:0;
     padding:20px;
+}
+
+.container{
+    max-width:800px;
+    margin:auto;
+    text-align:center;
 }
 
 h1{
@@ -12,7 +18,22 @@ h1{
 .card{
     background:white;
     padding:20px;
-    margin:auto;
-    width:80%;
+    margin:15px 0;
     border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+.safe{
+    color:green;
+    font-weight:bold;
+    font-size:20px;
+}
+
+ul{
+    list-style:none;
+    padding:0;
+}
+
+li{
+    padding:5px;
 }
