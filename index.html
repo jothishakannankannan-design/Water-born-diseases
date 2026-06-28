@@ -1,46 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Smart Community Health Monitoring System</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Community Health Monitoring System</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+<header>
+<h1>💧 Smart Community Health Monitoring System</h1>
+<p>Early Warning System for Water-Borne Diseases</p>
+</header>
+
 <div class="container">
-    <h1>🌊 Smart Community Health Monitoring System</h1>
-    <p>Early Warning System for Water-Borne Diseases in Rural North-East India</p>
 
-    <div class="card">
-        <h2>💧 Water Quality</h2>
-        <h3>92%</h3>
-        <p>Safe Drinking Water</p>
-    </div>
+<h2>Enter Water Quality Details</h2>
 
-    <div class="card">
-        <h2>🚨 Disease Risk Level</h2>
-        <h3 style="color:green;">LOW</h3>
-    </div>
+<label>Village Name</label>
+<input type="text" id="village" placeholder="Enter Village Name">
 
-    <div class="card">
-        <h2>👥 Population Monitored</h2>
-        <h3>15,000+</h3>
-    </div>
+<label>Water Quality (%)</label>
+<input type="number" id="water" placeholder="0-100">
 
-    <div class="card">
-        <h2>🦠 Common Water-Borne Diseases</h2>
-        <p>Cholera | Typhoid | Diarrhea | Hepatitis A</p>
-    </div>
+<label>pH Value</label>
+<input type="number" id="ph" step="0.1" placeholder="7.0">
 
-    <div class="card">
-        <h2>📍 Monitoring Region</h2>
-        <p>North-East India Rural Communities</p>
-    </div>
+<label>Turbidity (NTU)</label>
+<input type="number" id="turbidity" placeholder="Enter Value">
 
-    <div class="card">
-        <h2>📅 Last Updated</h2>
-        <p>25 June 2026</p>
-    </div>
+<label>Population</label>
+<input type="number" id="population" placeholder="Population">
+
+<button onclick="checkRisk()">Submit</button>
+
+<div class="result">
+<h2>Result</h2>
+
+<p><strong>Village:</strong>
+<span id="villageResult">-</span></p>
+
+<p><strong>Water Quality:</strong>
+<span id="waterResult">-</span></p>
+
+<p><strong>Disease Risk:</strong>
+<span id="risk">-</span></p>
+
+<p><strong>Recommendation:</strong></p>
+
+<p id="advice"></p>
+
 </div>
 
+</div>
+
+<script src="script.js"></script>
+
 </body>
-        </html>
+    </html>
